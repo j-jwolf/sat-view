@@ -1,5 +1,5 @@
 # Satellite Image of Geolocation
-## John Wolf, v 0.0.1
+## John Wolf, v 0.1.0
 ***
 # Table of Contents
 1. Overview
@@ -19,16 +19,25 @@ Use one of the install binary files (more information below) to install the file
 
 # Installation
 
-## For Windows Users:
+## Installing using binary:
+
+### For Windows Users:
 Run the install.exe file
 
-## For Debian-based Linux Distributions:
+### For Debian-based Linux Distributions:
 Run the install.bin file
 
 This program will not work for other Linux distributions in its current state
 
-## For Mac OS users:
+### For Mac OS users:
 This program has not been tested on Mac OS. In theory, install.bin should work on Mac but until it has been tested I cannot recommend running it
+
+## Installing via compiling source code:
+Download the zip file and in the terminal(or PowerShell with Windows) move to the src folder and run the following:
+```
+gcc -O3 install.c -o install.ext
+```
+Replace the ext with exe if you are on Windows and on Linux/Mac OS you can use any binary extension you'd like. You can even leave the .ext part out. I used .bin to make it easier to manage two binary files in the repository
 
 # Troubleshooting
 Common issues:
